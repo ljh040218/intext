@@ -22,27 +22,19 @@ const CategorySearch = () => {
   };
 
   const categoryData = [
-    // First row
-    [
-      { imageUrl: misinformationImg, title: '거짓정보 방지', count: '43', navigateTo: '/inputdesign' },
-      { imageUrl: writingImg, title: '글쓰기', count: '32', isSpecialCard: true }
-    ],
-    // Second row
-    [
-      { imageUrl: marketingImg, title: '마케팅', count: '22', isSpecialCard: true },
-      { imageUrl: counselingImg, title: '고민 상담', count: '56' }
-    ],
-    // Third row
-    [
-      { imageUrl: learningImg, title: '학습 및 자기개발', count: '43', titleColor: '#2d0c57' },
-      { imageUrl: researchImg, title: '자료 검색', count: '43', titleColor: '#2d0c57' }
-    ],
-    // Fourth row
-    [
-      { imageUrl: makeImg, title: '이미지 생성', count: '43' },
-      { imageUrl: workImg, title: '업무', count: '32', isSpecialCard: true }
-    ]
-  ];
+  [
+    { imageUrl: researchImg, title: '개발 & 기술', count: '43', navigateTo: '/subcategory/development-tech' },
+    { imageUrl: writingImg, title: '글쓰기 & 창작', count: '32', isSpecialCard: true, navigateTo: '/subcategory/writing-creative' }],
+  [
+    { imageUrl: marketingImg, title: '마케팅 & 비즈니스', count: '22', isSpecialCard: true, navigateTo: '/subcategory/marketing-business' },
+    { imageUrl: workImg, title: '업무 효율', count: '32', isSpecialCard: true, navigateTo: '/subcategory/work-efficiency' } ],
+  [
+    { imageUrl: counselingImg, title: '소통 & 상담', count: '56', navigateTo: '/subcategory/communication-counseling' },
+    { imageUrl: makeImg, title: '창의적 작업', count: '43', navigateTo: '/subcategory/creative-work' }],
+  [
+    { imageUrl: misinformationImg, title: '품질 관리', count: '43', navigateTo: '/subcategory/quality-control' },
+    { imageUrl: learningImg, title: '학습 & 분석', count: '43', navigateTo: '/subcategory/learning-analysis' }]
+];
 
   return (
     <div className="search-page-wrapper">
@@ -50,7 +42,6 @@ const CategorySearch = () => {
         <IphoneXBarsStatus />
         <main className="main-content">
           <h1 className="page-title">카테고리</h1>
-          
           {/* 검색 입력 */}
           <div className="search-container">
             <div className="search-input">
@@ -63,8 +54,6 @@ const CategorySearch = () => {
               </div>
             </div>
           </div>
-
-          {/* 카테고리 그리드 */}
           <section className="category-grid">
             {categoryData.map((row, rowIndex) => (
               <div key={rowIndex} className={`grid-row ${rowIndex === 2 ? 'special-row' : ''}`}>
@@ -91,8 +80,6 @@ const CategorySearch = () => {
             ))}
           </section>
         </main>
-        
-        {/* 하단 네비게이션 */}
         <footer className="bottom-nav">
           <Link to="/" className="nav-item">
             <svg className="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

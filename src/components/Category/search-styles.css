@@ -1,0 +1,317 @@
+.search-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif;
+}
+
+.search-page-wrapper .search-container-wrapper {
+  background-color: #ffffff;
+  width: 402px;
+  height: 874px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.search-page-wrapper .iphone-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  height: 24px;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.search-page-wrapper .action {
+  display: flex;
+  align-items: center;
+}
+
+.search-page-wrapper .time {
+  color: #212121;
+  font-family: 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.search-page-wrapper .container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-page-wrapper .status-icons {
+  width: auto;
+  height: 12px;
+  object-fit: contain;
+}
+
+.search-page-wrapper .main-content {
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+  padding: 0 14px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  align-items: stretch;
+  height: calc(874px - 54px - 80px);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.search-page-wrapper .main-content::-webkit-scrollbar {
+  display: none !important;
+}
+
+.search-page-wrapper .page-title {
+  color: #000;
+  font-family: 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.41px;
+  align-self: start;
+  margin: 20px 0 0 12px;
+}
+
+.search-page-wrapper .search-container {
+  margin: 40px auto 0 auto;
+  min-height: 40px;
+  width: 100%;
+  color: #667085;
+  white-space: nowrap;
+}
+
+.search-page-wrapper .search-input {
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  border: 1px solid #eaecf0;
+  background-color: #f6f6f6;
+  display: flex;
+  min-height: 40px;
+  width: 100%;
+  overflow: hidden;
+  justify-content: start;
+}
+
+.search-page-wrapper .input-content {
+  display: flex;
+  min-width: 240px;
+  width: 100%;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 12px;
+  justify-content: start;
+  height: 100%;
+  flex: 1;
+}
+
+.search-page-wrapper .search-icon {
+  color: #667085;
+  z-index: 10;
+  align-self: stretch;
+  margin: auto 0;
+  font-family: 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  text-align: center;
+  width: 17px;
+}
+
+.search-page-wrapper .placeholder-text {
+  color: #667085;
+  align-self: stretch;
+  flex: 1;
+  min-width: 240px;
+  margin: auto 0;
+  font-family: 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.search-page-wrapper .category-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-page-wrapper .grid-row {
+  display: flex;
+  margin-top: 20px;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-page-wrapper .grid-row:first-child {
+  margin-top: 54px;
+}
+
+.search-page-wrapper .grid-row:last-child {
+  margin-top: 26px;
+}
+
+.search-page-wrapper .special-row {
+  font-family: 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
+}
+
+.search-page-wrapper .category-card {
+  border-radius: 8px;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  cursor: pointer; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.search-page-wrapper .category-card:hover {
+  transform: translateY(-3px); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.search-page-wrapper .category-card:active {
+  transform: translateY(-1px); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.search-page-wrapper .card-content {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-page-wrapper .card-border {
+  border-radius: 8px;
+  border: 1px solid #d9d0e3;
+  display: flex;
+  padding-bottom: 12px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-page-wrapper .category-image {
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  object-position: center;
+  width: 100%; 
+  height: 140px;
+  border-radius: 8px 8px 0px 0px;
+  box-sizing: border-box;
+}
+
+.search-page-wrapper .card-info {
+  display: flex;
+  margin-top: 8px;
+  padding: 0 16px 0 16px;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.search-page-wrapper .card-info.special {
+  align-self: start;
+  margin-left: 16px;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.search-page-wrapper .category-title {
+  font-family: 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+  word-break: keep-all; 
+  overflow-wrap: break-word;
+}
+
+.search-page-wrapper .category-title.special-color {
+  color: #2d0c57;
+  font-weight: 700;
+}
+
+.search-page-wrapper .category-count {
+  color: #9586a8;
+  font-family: 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 6px 0 0 0;
+}
+
+.search-page-wrapper .bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  border-radius: 0 0 30px 30px;
+}
+
+.search-page-wrapper .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.search-page-wrapper .nav-item:hover {
+  background-color: #f5f5f5;
+}
+
+.search-page-wrapper .nav-item.active {
+  color: #19213d;
+}
+
+.search-page-wrapper .nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 430px) {
+  .search-page-wrapper .search-container-wrapper {
+    width: 100%;
+    max-width: 402px;
+    height: 100vh;
+    border-radius: 0;
+  }
+  
+  .search-page-wrapper .page-title {
+    font-size: 32px;
+  }
+  
+  .search-page-wrapper .main-content {
+    padding: 0 12px;
+  }
+  
+  .search-page-wrapper .grid-row {
+    gap: 16px;
+  }
+}
