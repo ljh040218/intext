@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@200;300;400;500;600;700&display=swap');
+
+.profile-edit-page-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.profile-edit-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.profile-edit-page-wrapper .user-container {
+  background-color: #ffffff;
+  width: 402px;
+  height: 874px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.profile-edit-page-wrapper .iphone-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 19px 0px;
+}
+
+.profile-edit-page-wrapper .iphone-status .action {
+  display: flex;
+  align-items: center;
+}
+
+.profile-edit-page-wrapper .iphone-status .time {
+  color: #212121;
+  font-family: 'Pretendard', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profile-edit-page-wrapper .iphone-status .container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-edit-page-wrapper .iphone-status .status-icons {
+  width: auto;
+  height: 12px;
+  object-fit: contain;
+}
+
+.profile-edit-page-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 21px 12px;  
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.profile-edit-page-wrapper .back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-edit-page-wrapper .header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;  
+  font-weight: 300; 
+  color: #000;     
+  margin: 0;
+}
+
+.profile-edit-page-wrapper .info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;  
+}
+
+.profile-edit-page-wrapper .info-row:hover {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 0 -12px;
+}
+
+.profile-edit-page-wrapper .value-input {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+  outline: none;
+  width: auto;
+  min-width: 100px;
+}
+
+.profile-edit-page-wrapper .value-input:focus {
+  background-color: #f0f8ff;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.profile-edit-page-wrapper .complete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: px;
+  transition: color 0.2s ease;
+}
+
+.profile-edit-page-wrapper .complete-btn.active {
+  color: #2388ff;
+  cursor: pointer;
+}
+
+.profile-edit-page-wrapper .complete-btn.inactive {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.profile-edit-page-wrapper .content {
+  padding: 32px 45px 0;
+}
+
+.profile-edit-page-wrapper .profile-image-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.profile-edit-page-wrapper .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-edit-page-wrapper .profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-edit-page-wrapper .camera-btn {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-edit-page-wrapper .camera-btn:hover {
+  background-color: #f9f9f9;
+}
+
+.profile-edit-page-wrapper .camera-btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.profile-edit-page-wrapper .form-section {
+  width: 100%;
+}
+
+.profile-edit-page-wrapper .info-section {
+  margin-bottom: 50px;
+}
+
+.profile-edit-page-wrapper .section-title {
+  color: rgba(53, 56, 61, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.profile-edit-page-wrapper .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 14px 0;
+}
+
+.profile-edit-page-wrapper .label {
+  color: #35383d;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.profile-edit-page-wrapper .value {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.profile-edit-page-wrapper .share-section {
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+.profile-edit-page-wrapper .section-desc {
+  color: rgba(53, 56, 61, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  line-height: 0.8;
+}
+
+.profile-edit-page-wrapper .toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.profile-edit-page-wrapper .toggle-label {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-edit-page-wrapper .toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.profile-edit-page-wrapper .toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.profile-edit-page-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.profile-edit-page-wrapper .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-edit-page-wrapper input:checked + .slider {
+  background-color: #2388ff;
+}
+
+.profile-edit-page-wrapper input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+@media (max-width: 640px) {
+  .profile-edit-page-wrapper .content {
+    padding: 48px 20px 0;
+  }
+}

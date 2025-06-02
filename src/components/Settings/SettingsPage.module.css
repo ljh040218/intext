@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@200;300;400;500;600;700&display=swap');
+
+.settings * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.settingsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  width: 402px;
+  height: 874px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.settingsWrapper {
+  background-color: #ffffff;
+  width: 402px;
+  height: 874px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 874px;
+}
+
+.headerSection {
+  background-color: #ffffff;
+  padding: 15px 24px 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px 0 0 0;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 25px;
+}
+
+.timeDisplay {
+  color: #212121;
+  font-family: 'Pretendard', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.statusIcons {
+  width: auto;
+  height: 12px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.pageTitle {
+  margin: 0;
+  font-family: 'Pretendard', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contentCard {
+  background-color: #fff;
+  border-radius: 16px;
+  flex-direction: column;
+  align-items: stretch;
+  width: calc(100% - 40px);
+  margin: 20px 20px 100px;
+  padding: 25px 20px 20px;
+  font-family: 'Pretendard', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  box-shadow: 0 2px 16px rgba(75, 75, 75, 0.1);
+  box-sizing: border-box;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* 하단 네비게이션 */
+.bottomNavigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  border-radius: 0 0 30px 30px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background-color: #f5f5f5;
+}
+
+.navItem.active {
+  color: #19213d;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userName {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.dividerImage {
+  width: 100%;
+  height: 1px;
+  margin: 15px 0 20px 0;
+  object-fit: cover;
+}
+
+.menuContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.menuContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.menuItem {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.menuItem:hover {
+  background-color: #f8f8f8;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.menuText {
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.logoutItem {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.logoutItem:hover {
+  background-color: #fff5f5;
+}
+
+.logoutText {
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff3b30;
+  margin: 0;
+}
+
+.bottomImage {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .settingsWrapper {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .headerSection {
+    border-radius: 0;
+  }
+  
+  .bottomNavigation {
+    border-radius: 0;
+  }
+}
